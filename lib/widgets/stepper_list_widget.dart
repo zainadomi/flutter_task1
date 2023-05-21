@@ -29,7 +29,7 @@ class StepperListWidget extends StatelessWidget {
         return PreferredSize(
           preferredSize: Size.fromRadius(AppSizes.kSizesBox*1.6),
           child: Container(
-            width: AppSizes.kSizesBox1 * 1.1,
+            width: AppSizes.kSizesBox1 * 1.2,
             height: AppSizes.kSizesBox1,
             decoration: BoxDecoration(
                 color: isSelected?Colors.amber:Colors.transparent,

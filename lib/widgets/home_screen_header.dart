@@ -53,13 +53,14 @@ class HomeScreenHeaders extends StatelessWidget {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      const Icon(Icons.arrow_back_ios_new,
-                          color: AppColors.kWhite),
+                       Icon(Icons.arrow_back_ios_new,
+                          color: AppColors.kWhite,size: AppSizes.kIconSize,),
+
                       Container(
-                        height: AppSizes.kSmallContainerHeight * 0.9,
-                        width: AppSizes.kSmallContainerHeight * 0.9,
+                        height: AppSizes.kContainerHeight * 0.8,
+                        width: AppSizes.kSmallContainerWidth * 0.2,
                         decoration: BoxDecoration(
-                          color: AppColors.kDarkGrey.withOpacity(0.6),
+                          color: AppColors.kDarkGrey.withOpacity(0.4),
                           borderRadius: BorderRadius.circular(
                               AppSizes.kBoarderRadius * 0.7),
                         ),
@@ -68,7 +69,7 @@ class HomeScreenHeaders extends StatelessWidget {
                             Get.toNamed(Routes.filterScreen);
                           },
                           child: Icon(Icons.bookmark_border,
-                              color: AppColors.kWhite, size: AppSizes.kIconSize1 * 0.9),
+                              color: AppColors.kWhite, size: AppSizes.kIconSize1 * 0.8,),
                         ),
                       ),
                     ],

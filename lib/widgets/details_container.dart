@@ -20,7 +20,7 @@ class DetailsContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: AppSizes.kContainerHeight * 2.1,
+      height: AppSizes.kContainerHeight * 2.3,
       width: AppSizes.kContainerWidth,
       decoration: BoxDecoration(
         color: AppColors.kDarkGrey,
@@ -63,7 +63,7 @@ class DetailsContainer extends StatelessWidget {
               ),
               const Spacer(),
               Container(
-                height: AppSizes.kContainerHeight * 2,
+                height: AppSizes.kContainerHeight * 3,
                 decoration: BoxDecoration(
                   color: percent == "100%"
                       ? AppColors.kYellow
@@ -98,7 +98,7 @@ class DetailsContainer extends StatelessWidget {
                                   ? AppColors.kBlack
                                   : AppColors.kWhite,
                               fontWeight: FontWeight.w500,
-                              fontSize: AppSizes.kSmallLabel,
+                              fontSize: AppSizes.kSmallLabel * 0.9,
                             )),
                       ),
                     ),
