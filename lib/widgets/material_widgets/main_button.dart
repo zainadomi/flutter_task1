@@ -14,7 +14,7 @@ class MainButton extends StatelessWidget {
     return  InkWell(
       onTap: onTap,
       child: Container(
-        height:AppSizes.kContainerHeight * 0.8,
+        height:AppSizes.kContainerHeight * 1.5,
         width: double.infinity,
         decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(AppSizes.kBoarderRadius * 0.6),
