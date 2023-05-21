@@ -30,15 +30,18 @@ class AppSizes {
   static final kIconSize3 = Get.width * 0.1;
 
 //static  containers height
-  static final kContainerHeight = Get.height * 0.09;
-  static final kSmallContainerHeight = Get.height * 0.04;
+  static final kContainerHeight = Get.width * 0.09;
+  static final kSmallContainerHeight = Get.width * 0.04;
 
 //static  containers width
   static final kContainerWidth = Get.width * 0.8;
   static final kSmallContainerWidth = Get.width * 0.4;
 
 //static  boarder radius
-  static final kBoarderRadius = Get.width * 0.04;
+    static final kBoarderRadius = Get.width * 0.04;
+    static final kBoarderRadius1= Get.width * 0.06;
+    static final kBoarderRadius2= Get.width * 0.08;
+    static final kBoarderRadius3= Get.width * 0.09;
 
 }
 

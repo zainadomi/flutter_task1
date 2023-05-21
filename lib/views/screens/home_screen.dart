@@ -18,7 +18,7 @@ class HomeScreen extends StatelessWidget {
           children: [
             const HomeScreenHeaders(),
             SizedBox(height: AppSizes.kSizesBox),
-            HomeScreenBody(),
+            const HomeScreenBody(),
           ],
         ),
       ),

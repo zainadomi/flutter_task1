@@ -20,7 +20,7 @@ class DetailsContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: AppSizes.kContainerHeight * 1.3,
+      height: AppSizes.kContainerHeight * 2.1,
       width: AppSizes.kContainerWidth,
       decoration: BoxDecoration(
         color: AppColors.kDarkGrey,
@@ -30,7 +30,7 @@ class DetailsContainer extends StatelessWidget {
         padding: EdgeInsets.all(AppSizes.kPadding1 * 0.9),
         child: Padding(
           padding: EdgeInsets.only(
-              left: AppSizes.kPadding1, right: AppSizes.kPadding1),
+              left: AppSizes.kPadding1,),
           child: Row(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
@@ -62,56 +62,48 @@ class DetailsContainer extends StatelessWidget {
                 ],
               ),
               const Spacer(),
-              Column(
-                children: [
-                  Container(
-                    height: AppSizes.kContainerHeight * 0.89,
-                    width: AppSizes.kSmallContainerWidth * 0.5,
-                    decoration: BoxDecoration(
-                      color: percent == "100%"
-                          ? AppColors.kYellow
-                          : AppColors.kMidGrey,
+              Container(
+                height: AppSizes.kContainerHeight * 2,
+                decoration: BoxDecoration(
+                  color: percent == "100%"
+                      ? AppColors.kYellow
+                      : AppColors.kMidGrey,
+                  shape: BoxShape.circle,
+                ),
+                child: Padding(
+                  padding: EdgeInsets.all(AppSizes.kPadding1 * 0.3),
+                  child: Container(
+                    height: AppSizes.kContainerHeight * 0.55,
+                    width: AppSizes.kSmallContainerWidth * 0.55,
+                    decoration: const BoxDecoration(
+                      color: AppColors.kBlack,
                       shape: BoxShape.circle,
                     ),
                     child: Padding(
-                      padding: EdgeInsets.all(AppSizes.kPadding1 * 0.3),
+                      padding: EdgeInsets.all(AppSizes.kPadding1 * 0.2),
                       child: Container(
-                        height: AppSizes.kContainerHeight * 0.5,
+                        height: AppSizes.kContainerHeight * 0.4,
                         width: AppSizes.kSmallContainerWidth * 0.4,
-                        decoration: const BoxDecoration(
-                          color: AppColors.kBlack,
+                        decoration: BoxDecoration(
+                          color: percent == "100%"
+                              ? AppColors.kYellow
+                              : AppColors.kDarkGrey,
                           shape: BoxShape.circle,
                         ),
-                        child: Padding(
-                          padding: EdgeInsets.all(AppSizes.kPadding1 * 0.23),
-                          child: Container(
-                            height: AppSizes.kContainerHeight * 0.3,
-                            width: AppSizes.kSmallContainerWidth * 0.2,
-                            decoration: BoxDecoration(
+                        child: Align(
+                            alignment: Alignment.center,
+                            child: MainText(
+                              text: percent,
                               color: percent == "100%"
-                                  ? AppColors.kYellow
-                                  : AppColors.kDarkGrey,
-                              shape: BoxShape.circle,
-                            ),
-                            child: Padding(
-                              padding: EdgeInsets.all(AppSizes.kPadding1),
-                              child: Align(
-                                  alignment: Alignment.center,
-                                  child: MainText(
-                                    text: percent,
-                                    color: percent == "100%"
-                                        ? AppColors.kBlack
-                                        : AppColors.kWhite,
-                                    fontWeight: FontWeight.w500,
-                                    fontSize: AppSizes.kSmallLabel,
-                                  )),
-                            ),
-                          ),
-                        ),
+                                  ? AppColors.kBlack
+                                  : AppColors.kWhite,
+                              fontWeight: FontWeight.w500,
+                              fontSize: AppSizes.kSmallLabel,
+                            )),
                       ),
                     ),
                   ),
-                ],
+                ),
               ),
             ],
           ),

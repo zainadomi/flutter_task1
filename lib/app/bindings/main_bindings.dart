@@ -5,8 +5,5 @@ class MainBindings extends Bindings {
   @override
   void dependencies() {
     Get.put(DetailsController());
-    {
-      // TODO: implement dependencies
-    }
   }
 }

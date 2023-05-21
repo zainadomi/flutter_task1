@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import '../app/routes/routes.dart';
 import '../core/utils/assets/app_assets.dart';
 import '../core/utils/sizes/sizes.dart';
 import '../core/utils/theme/colors.dart';
@@ -11,14 +13,6 @@ class HomeScreenHeaders extends StatelessWidget {
   Widget build(BuildContext context) {
     return  Stack(
       children: [
-        // Container(
-        //   height: AppSizes.kHeight,
-        //   width: double.infinity,
-        //   decoration: const BoxDecoration(
-        //       image: DecorationImage(
-        //           image: AssetImage(kHomeScreenImage),
-        //           fit: BoxFit.cover)),
-        // ),
         ShaderMask(
           shaderCallback: (rect) {
             return const LinearGradient(
@@ -69,8 +63,13 @@ class HomeScreenHeaders extends StatelessWidget {
                           borderRadius: BorderRadius.circular(
                               AppSizes.kBoarderRadius * 0.7),
                         ),
-                        child: Icon(Icons.bookmark_border,
-                            color: AppColors.kWhite, size: AppSizes.kIconSize1 * 0.9),
+                        child: InkWell(
+                          onTap: (){
+                            Get.toNamed(Routes.filterScreen);
+                          },
+                          child: Icon(Icons.bookmark_border,
+                              color: AppColors.kWhite, size: AppSizes.kIconSize1 * 0.9),
+                        ),
                       ),
                     ],
                   ),
