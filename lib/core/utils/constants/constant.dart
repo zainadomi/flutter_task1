@@ -54,4 +54,44 @@ class AppConstant {
     {'id':3,'courseSubject': 'Marketing'},
     {'id':4,'courseSubject': 'Content writing'}
   ];
+
+  static final courseDetails = [
+
+    {
+      'id': 1,
+      'category': 'Data Science',
+      'title':'Deep Nural Networks With Pytorch',
+      'type':'Beginner',
+      'time': '02 h 20 m',
+      'image' : AppAssets.kDataScience,
+    },
+    {
+      'id': 2,
+      'category': 'Web Development',
+      'title':'Front-End Development Using React',
+      'type':'Beginner',
+      'time': '02 h 20 m',
+      'image' : AppAssets.kFrontEnd,
+
+    },
+    {
+      'id': 3,
+      'category': 'Data Science',
+      'title':'Deep Nural Networks With Pytorch',
+      'type':'Beginner',
+      'time': '02 h 20 m',
+      'image': AppAssets.kDataScience,
+
+    },
+    {
+      'id': 4,
+      'category': 'Web Development',
+      'title':'Front-End Development Using React',
+      'type':'Beginner',
+      'time': '02 h 20 m',
+      'image' : AppAssets.kFrontEnd,
+
+    },
+
+  ];
 }

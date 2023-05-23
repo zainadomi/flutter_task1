@@ -7,4 +7,6 @@ class AppAssets{
   static const String kAdvanced = 'assets/images/advanced.png';
   static const String kCertificate = 'assets/images/certificate.png';
   static const String kToggleOn = 'assets/images/toggleOn.png';
+  static const String kDataScience = 'assets/images/data_science.jpeg';
+  static const String kFrontEnd = 'assets/images/front_end.jpeg';
 }

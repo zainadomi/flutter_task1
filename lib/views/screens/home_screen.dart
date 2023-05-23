@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:my_first_task/app/Routes/routes.dart';
+import 'package:my_first_task/widgets/material_widgets/main_button.dart';
 import '../../core/utils/sizes/sizes.dart';
 import '../../core/utils/theme/colors.dart';
 import '../../widgets/home_screen_body.dart';
@@ -19,6 +22,7 @@ class HomeScreen extends StatelessWidget {
             const HomeScreenHeaders(),
             SizedBox(height: AppSizes.kSizesBox),
             const HomeScreenBody(),
+
           ],
         ),
       ),

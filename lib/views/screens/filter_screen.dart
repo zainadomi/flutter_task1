@@ -1,12 +1,11 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:my_first_task/app/Routes/routes.dart';
 import 'package:my_first_task/app/controllers/filter_controller.dart';
+import 'package:my_first_task/app/routes/routes.dart';
 import 'package:my_first_task/core/utils/assets/app_assets.dart';
 import 'package:my_first_task/core/utils/sizes/sizes.dart';
 import 'package:my_first_task/widgets/material_widgets/main_text.dart';
-
 import '../../core/utils/theme/colors.dart';
 import '../../widgets/filter_screen/course_subject_list_view.dart';
 import '../../widgets/filter_screen/type_list_view.dart';
@@ -104,10 +103,13 @@ class FilterScreen extends GetView<FilterController>{
                   SizedBox(height: AppSizes.kSizesBox1),
                   CourseSubjectListView(filterController: controller,),
                   const Spacer(),
+
                   MainButton(
-                    onTap: () {
-                      Get.toNamed(Routes.homeScreen);
-                    },
+
+                   onTap:(){
+                     Get.toNamed(Routes.searchScreen);
+                   },
+
                     title: 'Filter',
                   ),
                   SizedBox(height: AppSizes.kSizesBox),
